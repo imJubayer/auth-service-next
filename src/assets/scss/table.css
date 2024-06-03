@@ -1,0 +1,37 @@
+/* tableHeaderStyles.css */
+
+/* Center-align the header cell content */
+.MuiTableSortLabel-root,
+.MuiButtonBase-root.MuiTableSortLabel-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Optional: Add padding to the header cell */
+.MuiTableCell-head {
+    padding: 8px;
+}
+
+.custom-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Optional: Add padding to the header cell */
+    border-bottom: 1px solid #eeeeee; /* Add underline style */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Add background color as needed */
+    z-index: 1; /* Adjust z-index if needed */
+}
+
+.disable-box-shadow {
+    box-shadow: none !important;
+}
