@@ -41,11 +41,11 @@ export const useAuth = ({ middleware, redirectIfAuthenticated }: IUseAuth) => {
                     return res.data.data
                 } else {
                     // logout()
-                    router.push('/login')
+                    router.pathname !== '/register' && router.push('/login')
                 }
             })
             .catch(error => {
-                router.push('/login')
+                router.pathname !== '/register' && router.push('/login')
                 // router.pathname !== '/' && router.push('/login')
                 // if (error.response.status !== 409) throw error
                 // router.push('/verify-email')
