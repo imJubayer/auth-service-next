@@ -36,12 +36,12 @@ const EditService = ({
     const content = (
         <Formik
             initialValues={{
-                service_name: service?.service_name || '',
-                service_description: service?.service_description || '',
-                homepage_url: service?.homepage_url || '',
-                callback_url: service?.callback_url || '',
-                webhook_url: service?.webhook_url || '',
-                is_active: service?.is_active,
+                service_name: service.service_name || '',
+                service_description: service.service_description || '',
+                homepage_url: service.homepage_url || '',
+                callback_url: service.callback_url || '',
+                webhook_url: service.webhook_url || '',
+                is_active: service.is_active,
                 submit: null,
             }}
             enableReinitialize

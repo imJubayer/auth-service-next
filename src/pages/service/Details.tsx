@@ -30,7 +30,7 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Typography level="body-md">
-                            {service?.service_name}
+                            {service.service_name}
                         </Typography>
                     </td>
                 </tr>
@@ -45,7 +45,7 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Typography level="body-md">
-                            {service?.service_description}
+                            {service.service_description}
                         </Typography>
                     </td>
                 </tr>
@@ -60,7 +60,7 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Typography level="body-md">
-                            {service?.homepage_url}
+                            {service.homepage_url}
                         </Typography>
                     </td>
                 </tr>
@@ -75,7 +75,7 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Typography level="body-md">
-                            {service?.callback_url}
+                            {service.callback_url}
                         </Typography>
                     </td>
                 </tr>
@@ -90,7 +90,7 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Typography level="body-md">
-                            {service?.webhook_url}
+                            {service.webhook_url}
                         </Typography>
                     </td>
                 </tr>
@@ -105,9 +105,9 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Chip
-                            color={service?.is_active ? 'success' : 'danger'}
+                            color={service.is_active ? 'success' : 'danger'}
                             variant="soft">
-                            {service?.is_active ? 'Active' : 'Inactive'}
+                            {service.is_active ? 'Active' : 'Inactive'}
                         </Chip>
                     </td>
                 </tr>
@@ -122,9 +122,9 @@ const ServiceDetails = ({
                     <td>:</td>
                     <td>
                         <Chip
-                            color={service?.is_alive ? 'primary' : 'warning'}
+                            color={service.is_alive ? 'primary' : 'warning'}
                             variant="soft">
-                            {service?.is_alive ? 'Alive' : 'Not reachable'}
+                            {service.is_alive ? 'Alive' : 'Not reachable'}
                         </Chip>
                     </td>
                 </tr>

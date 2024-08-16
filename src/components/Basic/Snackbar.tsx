@@ -10,8 +10,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
 })
 
-// type SnackbarType = 'success' | 'info' | 'error' | 'warning'
-type SnackbarType = any
+type SnackbarType = 'success' | 'info' | 'error' | 'warning'
 type SnackbarProps = {
     open: boolean
     setOpen?: (value: boolean) => void
