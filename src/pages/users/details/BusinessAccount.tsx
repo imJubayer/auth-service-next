@@ -125,8 +125,8 @@ export default function BusinessAccounts({
             <Divider inset="none" />
             <BasicDataTable
                 columns={businessAccountColumns}
-                rows={businessAccounts.length ? businessAccounts : []}
-                count={businessAccounts.length || 0}
+                rows={businessAccounts?.length ? businessAccounts : []}
+                count={businessAccounts?.length || 0}
                 page={page}
                 rowsPerPage={rowsPerPage}
                 showSL={true}

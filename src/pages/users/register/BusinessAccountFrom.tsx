@@ -78,7 +78,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="text"
                                 name={`businessAccounts.${index}.first_name`}
                                 placeholder="Firstname"
-                                value={account.first_name}
+                                value={account?.first_name}
                                 onChange={handleChange}
                             />
                             {touched?.first_name && errors?.first_name && (
@@ -108,7 +108,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="text"
                                 name={`businessAccounts.${index}.last_name`}
                                 placeholder="LastName"
-                                value={account.last_name}
+                                value={account?.last_name}
                                 onChange={handleChange}
                             />
                             {touched?.last_name && errors?.last_name && (
@@ -136,7 +136,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="email"
                                 name={`businessAccounts.${index}.email`}
                                 placeholder="Email"
-                                value={account.email}
+                                value={account?.email}
                                 onChange={handleChange}
                             />
                             {touched?.email && errors?.email && (
@@ -164,7 +164,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="phone"
                                 name={`businessAccounts.${index}.phone`}
                                 placeholder="Phone"
-                                value={account.phone}
+                                value={account?.phone}
                                 onChange={handleChange}
                             />
                             {touched?.phone && errors?.phone && (
@@ -193,7 +193,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                             <Textarea
                                 name={`businessAccounts.${index}.address`}
                                 placeholder="Address"
-                                value={account.address}
+                                value={account?.address}
                                 onChange={handleChange}
                                 minRows={3}
                             />
@@ -230,7 +230,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="number"
                                 name={`businessAccounts.${index}.longitude`}
                                 placeholder="Longitude"
-                                value={account.longitude}
+                                value={account?.longitude}
                                 onChange={handleChange}
                             />
                             {touched?.longitude && errors?.longitude && (
@@ -260,7 +260,7 @@ const BusinessAccountFormComponent: React.FC<BusinessAccountFormProps> = ({
                                 type="number"
                                 name={`businessAccounts.${index}.latitude`}
                                 placeholder="Latitude"
-                                value={account.latitude}
+                                value={account?.latitude}
                                 onChange={handleChange}
                             />
                             {touched?.latitude && errors?.latitude && (

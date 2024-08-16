@@ -318,7 +318,13 @@ const UserEditForm = ({ user, roles, isProfileUpdate }: EditFormPropsType) => {
                                                         {errors.roles && (
                                                             <FormHelperText>
                                                                 <InfoOutlined />
-                                                                {errors.roles}
+                                                                {Array.isArray(
+                                                                    errors.roles,
+                                                                )
+                                                                    ? errors.roles.join(
+                                                                          ', ',
+                                                                      )
+                                                                    : errors.roles}
                                                             </FormHelperText>
                                                         )}
                                                     </FormControl>

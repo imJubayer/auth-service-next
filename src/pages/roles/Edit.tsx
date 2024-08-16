@@ -37,7 +37,7 @@ const EditRole = ({
     const content = (
         <Formik
             initialValues={{
-                name: role.name,
+                name: role?.name,
                 submit: null,
             }}
             validationSchema={Yup.object().shape({
